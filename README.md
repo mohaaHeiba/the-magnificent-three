@@ -71,7 +71,12 @@ the-magnificent-three/
 4. Click "Classify" to get the results
 5. View the classification results and confidence scores
 ## 💻 Screenshots
+
+<img src="https://github.com/user-attachments/assets/62f6417c-4105-49c8-a238-44e8d09df4f6" width="400"/>
+
+<img src="https://github.com/user-attachments/assets/fb3f2568-bdf3-4e6f-946a-9437f8a6d04b" width="400"/>
 <img src="https://github.com/user-attachments/assets/617dbec3-4fcf-4e8c-8f39-ae086093c090" width="400"/>
+
 <img src="https://github.com/user-attachments/assets/6c2ea437-639f-404a-b184-dbc5bff3bd82" width="400"/>
 
 
