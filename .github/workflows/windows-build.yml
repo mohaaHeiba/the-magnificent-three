@@ -10,6 +10,9 @@ on:
 jobs:
   build:
     runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: flutter_ml   # 👈 ده أهم تعديل
 
     steps:
       - name: Checkout source
@@ -38,4 +41,4 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: flutter-windows-exe
-          path: build/app-release.zip
+          path: flutter_ml/build/app-release.zip
