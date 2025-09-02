@@ -12,7 +12,7 @@ jobs:
     runs-on: windows-latest
     defaults:
       run:
-        working-directory: flutter_ml   # 👈 ده أهم تعديل
+        working-directory: flutter_ml   # 👈 خلي كل أوامر Flutter تشتغل من جوه مجلد flutter_ml
 
     steps:
       - name: Checkout source
@@ -21,7 +21,7 @@ jobs:
       - name: Setup Flutter
         uses: subosito/flutter-action@v2
         with:
-          flutter-version: '3.24.0'
+          flutter-version: '3.24.0'   # غيرها لو عندك نسخة Flutter تانية
 
       - name: Enable Windows desktop
         run: flutter config --enable-windows-desktop
@@ -34,8 +34,8 @@ jobs:
 
       - name: Compress Release folder into zip
         run: |
-          cd build/windows/runner/Release
-          powershell Compress-Archive -Path * -DestinationPath ../../../app-release.zip
+          cd flutter_ml/build/windows/x64/runner/Release
+          powershell Compress-Archive -Path * -DestinationPath ../../../../../app-release.zip
 
       - name: Upload exe artifact (zipped)
         uses: actions/upload-artifact@v4
