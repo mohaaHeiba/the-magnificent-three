@@ -1,0 +1,108 @@
+# Brain Tumor Detection System
+
+A Flutter application for AI-powered brain tumor detection and classification using MRI scans.
+
+## Overview
+
+This application provides healthcare professionals with an intuitive interface for analyzing brain MRI scans using AI technology. The system can detect and classify different types of brain tumors with high accuracy.
+
+## Features
+
+- **AI-Powered Analysis**
+  - Real-time MRI scan classification
+  - Support for multiple tumor types:
+    - Glioma
+    - Meningioma
+    - Pituitary
+    - No tumor detection
+  - Confidence score analysis
+
+- **User Authentication**
+  - Secure login system
+  - Role-based access (Doctor, Radiologist, Neurologist, Technician)
+  - Local data persistence
+
+- **Dashboard**
+  - Quick statistics overview
+  - Recent activity tracking
+  - System status monitoring
+  - Performance metrics
+
+- **Image Processing**
+  - MRI scan upload and preview
+  - High-resolution image handling
+  - Result visualization
+
+- **Patient Management**
+  - Patient records
+  - Analysis history
+  - Clinical notes
+
+- **Settings & Customization**
+  - Dark/Light theme support
+  - Profile management
+  - System preferences
+
+## Technical Details
+
+### Architecture
+- GetX state management
+- Floor database for local storage
+- TensorFlow Lite for ML model inference
+- Clean Architecture pattern (Domain, Data, Presentation layers)
+
+### Dependencies
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  get: ^4.x.x
+  floor: ^x.x.x
+  tflite_flutter: ^x.x.x
+  image_picker: ^x.x.x
+  get_storage: ^x.x.x
+```
+
+## Getting Started
+
+1. Clone the repository:
+```bash
+git clone [repository-url]
+```
+
+2. Install dependencies:
+```bash
+flutter pub get
+```
+
+3. Run the app:
+```bash
+flutter run
+```
+
+## System Requirements
+
+- Flutter SDK
+- Dart SDK
+- TensorFlow Lite support
+- Storage access for image processing
+
+## Project Structure
+
+```
+lib/
+├── app.dart
+├── main.dart
+├── core/            # Core functionality
+├── data/            # Data layer
+├── domain/          # Business logic
+└── presentation/    # UI components
+```
+
+## Contributing
+
+Please read CONTRIBUTING.md for details on our code of conduct and the process for submitting pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
